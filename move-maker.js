@@ -15,10 +15,51 @@
             ['O', 'O', 'X']
         ];
 */
-function validateMove(move, board) {
+   let board = [
+     ["X", "_", "_"],
+     ["_", "X", "_"],
+     ["O", "_", "X"],
+   ];
+ function validateMove(move, board) {
+    if (Array.isArray(move)&&move.length===2){
+
+            let newArray = board[move[0]]
+            if (newArray[move[1]] === "_") {
+                return true;
+            }
+            return "number is not valid"
+            }
+            return "number is not valid"
+    }
+
+    
+//     if(move.length===2){
+//         board.forEach(element => {
+//             element.forEach(item => {
+//                 if(item === "_"){
+//                     console.log(true);
+//                 }
+            
+//         });
+
+
+//     })};
+
+
     // Implement this at the end if you have time, otherwise you can help your teammates!
-    return true;
-}
+// };
+
+function checkRow(board, player){} 
+
+
+
+
+
+
+
+
+
+console.log(validateMove([0,1,1],board));
 
 /*
     Given 3 parameters:
